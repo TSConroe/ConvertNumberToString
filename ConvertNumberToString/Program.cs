@@ -13,4 +13,11 @@ namespace ConvertNumberToString
             
         }
     }
+    public static class GetWord
+    {
+        public static int GetFive()
+        {
+            return 5;
+        }
+    }
 }
