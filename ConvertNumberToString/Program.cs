@@ -19,5 +19,12 @@ namespace ConvertNumberToString
         {
             return 5;
         }
+      
+    
+        public static string GetOneDigitNumber()
+        {
+            return "Три";
+        }
+
     }
 }
