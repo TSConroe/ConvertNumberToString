@@ -21,5 +21,20 @@ namespace ConvertNumberToString
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void TestGetOneDigitNumber()
+        {
+            // Arrange
+            string expected = "Три";
+
+
+            // Act
+            string actual = GetWord.GetOneDigitNumber();
+
+            // Assert
+
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
