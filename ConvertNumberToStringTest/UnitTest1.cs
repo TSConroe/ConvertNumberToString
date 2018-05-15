@@ -4,22 +4,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ConvertNumberToString
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest1 : GetWord
     {
-        [TestMethod]
-        public void TestGetFive()
-        {
-            // Arrange
-            int expected = 5;
-
-
-            // Act
-            int actual = GetWord.GetFive();
-
-            // Assert
-
-            Assert.AreEqual(expected, actual);
-        }
+      
 
         [TestMethod]
         public void TestGetOneDigitNumber()
@@ -27,10 +14,11 @@ namespace ConvertNumberToString
             // Arrange
             string expected = "три";
             int transmitted = 3;
+            GetWord testObj = new GetWord();
 
 
             // Act
-            string actual = GetWord.GetOneDigitNumber(transmitted);
+            string actual = testObj.GetOneDigitNumber(transmitted);
 
             // Assert
 
