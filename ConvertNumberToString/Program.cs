@@ -15,15 +15,18 @@ namespace ConvertNumberToString
     }
     public static class GetWord
     {
-        public static int GetFive()
+        static private  String[] SingleDigit = new String[]{"ноль", "один", "два", "три", "четыре",
+                "пять", "шесть", "семь", "восемь", "девять"};
+    public static int GetFive()
         {
             return 5;
         }
       
     
-        public static string GetOneDigitNumber()
+        public static string GetOneDigitNumber(int digt)
         {
-            return "Три";
+
+            return SingleDigit[digt];
         }
 
     }

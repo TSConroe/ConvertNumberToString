@@ -25,11 +25,12 @@ namespace ConvertNumberToString
         public void TestGetOneDigitNumber()
         {
             // Arrange
-            string expected = "Три";
+            string expected = "три";
+            int transmitted = 3;
 
 
             // Act
-            string actual = GetWord.GetOneDigitNumber();
+            string actual = GetWord.GetOneDigitNumber(transmitted);
 
             // Assert
 
