@@ -13,17 +13,13 @@ namespace ConvertNumberToString
             
         }
     }
-    public static class GetWord
+     public class GetWord
     {
-        static private  String[] SingleDigit = new String[]{"ноль", "один", "два", "три", "четыре",
+         private  String[] SingleDigit = new String[]{"ноль", "один", "два", "три", "четыре",
                 "пять", "шесть", "семь", "восемь", "девять"};
-    public static int GetFive()
-        {
-            return 5;
-        }
-      
+ 
     
-        public static string GetOneDigitNumber(int digt)
+         public string GetOneDigitNumber(int digt)
         {
 
             return SingleDigit[digt];
